@@ -16,16 +16,6 @@ chai.use(chaiHttp);
 //Our parent block
 describe('Users', () => {
 
-	// describe('/GET user', () => {
-	// 	it('it should GET all the users', (done) => {
-	// 		chai.request(server)
-	// 			.get('/users/1')
-	// 			.end((err, res) => {
-	// 				res.should.have.status(200);
-	// 				done();
-	// 			});
-	// 	});
-	// });
 	beforeEach((done) => { //Before each test we empty the database
 		User.remove({}, (err) => {
 			done();
